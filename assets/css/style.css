@@ -1,0 +1,294 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: none;
+}
+
+button,
+[role='button'],
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background: inherit;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  vertical-align: inherit;
+  width: auto;
+}
+
+iframe {
+  border: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  width: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased !important;
+  font-smooth: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+html,
+body {
+  position: relative;
+}
+
+a svg,
+button * {
+  pointer-events: none;
+}
+
+/*
+Colors:
+
+Text: 1A1A1A
+Green: #00B172
+White: #FFF
+
+*/
+
+:root {
+  --white: #fff;
+  --neutral-100: #f8f9fa;
+  --neutral-200: #e8f0fe;
+  --neutral-300: #E2E2E2;
+  --neutral-400: #595959;
+  --neutral-500: #2C2C2C;
+  --neutral-800: #1F1F1F;
+  --neutral-900: #1A1A1A;
+  --primary-500: #00B172;
+
+  --breakpoint-main: 52.5rem; /* 840px */
+  --wrapper: 55rem; /* 880px */
+  --wrapper-padding: 1rem; /* 24px */
+}
+
+/* *************************************************************** */
+/*                      Globals                                    */
+/* *************************************************************** */
+
+html {
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+    color: var(--neutral-900);
+  }
+
+h1 {
+    font-size: 3.157rem; /* 50px */
+}
+
+h2 {
+    font-size: 2.157rem; /* 50px */
+}
+
+h3 {
+    font-size: 1.157rem; /* 50px */
+}
+
+b, strong{
+    font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+  color: var(--neutral-900);
+}
+
+/* *************************************************************** */
+/*                          Wrapper                                */
+/* *************************************************************** */
+
+.wrapper {
+    display: block;
+    padding: 0 var(--wrapper-padding);
+    width: 100%;
+  }
+  
+  .wrapper-max {
+    margin: 0 auto;
+    max-width: var(--wrapper);
+  }
+
+/* *************************************************************** */
+/*                           Header                                */
+/* *************************************************************** */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    height: 80px;
+    width:100%;
+    position: fixed;
+    background-color: var(--white);
+}
+.logo{
+  max-width: 10rem;
+}
+.header__nav{
+  display: flex;
+  gap: 2rem;
+}
+
+/* *************************************************************** */
+/*                           Hero.                                 */
+/* *************************************************************** */
+
+.hero{
+  background-image: url(/assets/img/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh
+}
+
+.hero__content{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hero__title{
+  color: var(--white);
+}
+
+.hero__subtitle{
+  color: var(--white);
+}
