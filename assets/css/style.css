@@ -221,26 +221,26 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.052rem; /* 50px */
+  font-size: 3.052rem; /* 61px */
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.441rem; /* 50px */
+  font-size: 1.25rem; /* 25px */
 }
 
 h3 {
-  font-size: 1.953rem; /* 50px */
+  font-size: 1.953rem; /* 39px */
   font-weight: 700;
 }
 
 h4{
-  font-size: 1.563rem;
+  font-size: 1.563rem; /* 31.25px */
   font-weight: 700;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* 25px */
 }
 
 small, .text_small {
@@ -287,7 +287,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem;
   height: 80px;
   width:100%;
   position: fixed;
@@ -301,7 +301,13 @@ a{
 
 .header__nav{
   display: flex;
-  gap: 2rem;
+}
+
+.header__nav li{
+  margin-left: 2rem;
+}
+.header__nav il:first-child{
+  margin-left: 0rem;
 }
 
 /* *************************************************************** */
@@ -311,6 +317,7 @@ a{
 .hero{
   background-image: url(/assets/img/landing.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: calc(100vh - 80px);
   margin-top:80px;
@@ -323,11 +330,7 @@ a{
   height: 100%;
 }
 
-.hero__title{
-  color: var(--white);
-}
-
-.hero__subtitle{
+.hero__title, .hero__subtitle{
   color: var(--white);
 }
 
@@ -383,12 +386,7 @@ a{
   align-items: center;
 }
 
-.actions__content__flex{
-  width: calc(100%/3);
-}
-
 .spotify-icon{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+position: absolute;
+width: 50%;
 }
