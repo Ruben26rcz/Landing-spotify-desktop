@@ -252,7 +252,7 @@ small, .text_small {
 }
 
 b, strong{
-    font-weight: 700;
+  font-weight: 700;
 }
 
 a{
@@ -269,41 +269,43 @@ a{
 /* *************************************************************** */
 
 .wrapper {
-    display: block;
-    padding: 0 var(--wrapper-padding);
-    width: 100%;
-  }
+  display: block;
+  padding: 0 var(--wrapper-padding);
+  width: 100%;
+}
   
-  .wrapper-max {
-    margin: 0 auto;
-    max-width: var(--wrapper);
-  }
+.wrapper-max {
+  margin: 0 auto;
+  max-width: var(--wrapper);
+}
 
 /* *************************************************************** */
 /*                           Header                                */
 /* *************************************************************** */
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem 1rem 2rem;
-    height: 80px;
-    width:100%;
-    position: fixed;
-    top: 0;
-    background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  height: 80px;
+  width:100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--white);
 }
+
 .logo{
   max-width: 10rem;
 }
+
 .header__nav{
   display: flex;
   gap: 2rem;
 }
 
 /* *************************************************************** */
-/*                           Hero.                                 */
+/*                           Hero                                  */
 /* *************************************************************** */
 
 .hero{
@@ -329,13 +331,16 @@ a{
   color: var(--white);
 }
 
+/* *************************************************************** */
+/*                           Benefits                              */
+/* *************************************************************** */
 
 .benefits{
   padding: 4rem 0;
 }
 
 .benefits h4{
-  color: #00B172;
+  color: var(--primary-500);
 }
 
 .benefits__content{
@@ -355,20 +360,24 @@ a{
 }
 
 .underline--primary{
-  text-decoration: underline #00B172;
+  text-decoration: underline var(--primary-500)
 
 }
+
 .underline--white{
-text-decoration: underline var(--white);
+  text-decoration: underline var(--white);
 }
 
-
+/* *************************************************************** */
+/*                           Actions                               */
+/* *************************************************************** */
 
 .actions{
-  background-color: #00B172;
+  background-color: var(--primary-500);
   color: var(--white);
   padding: 3rem 0;
 }
+
 .actions__content{
   display: flex;
   align-items: center;
